@@ -24,7 +24,7 @@ public abstract class Loot {
 
     public abstract String  getEffectDescription();
 
-    public abstract String asCsvRecord();                                                   
+    public abstract String asCsvRow();                                                   
 
 }
 

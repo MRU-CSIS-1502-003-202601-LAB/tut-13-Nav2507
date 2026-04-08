@@ -12,14 +12,13 @@ public class Weapon extends Loot {
     }
 
     @Override
-    public String getEffectDescription(){
+    public String getEffectDescription() {
         return String.format("%s (%s): D%d", getName(), getRarity(), damage);
     }
 
-    // @Override
-     // public String asCsvRecord(){
-      // return String.format("%s, %s, %d", getName(), getRarity(), damage);
-  //  }
+    @Override
+    public String asCsvRow() {
+        return String.format("Weapon,%s,%s,%d", getName(), getRarity(), damage);
+    }
 
 }
-
